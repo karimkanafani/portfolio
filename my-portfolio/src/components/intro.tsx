@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from "next/image";
-import headshot from "@/public/headshot.png";
+import headshot from "../../public/headshot.png";
 import { motion } from 'framer-motion';
 import Link from "next/link";
 import {BsArrowRight, BsLinkedin} from "react-icons/bs";
