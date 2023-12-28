@@ -45,9 +45,9 @@ export default function Intro() {
             <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial={{opacity:0, y: 100}}
             animate={{opacity: 1, y: 0}}>
-                <span className="font-bold">Hello, I'm Karim.</span> I'm a{" "}
+                <span className="font-bold">Hello, I'm Karim Kanafani <br></br>.</span> I'm a{" "}
                 <span className="font-bold">Software Engineering Student</span> at{" "}
-                <span className="font-bold">McGill University</span>. I enjoy
+                <span className="font-bold">McGill University</span>. <br></br> I enjoy
                 exploring different facets of development ranging from  <span className="font-bold">apps to games</span>.
             </motion.p>
 
