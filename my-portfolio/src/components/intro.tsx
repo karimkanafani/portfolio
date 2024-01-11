@@ -11,7 +11,7 @@ import {FaGithubSquare} from "react-icons/fa";
 
 export default function Intro() {
     return (
-        <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+        <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
@@ -42,14 +42,14 @@ export default function Intro() {
                 </div>
             </div>
 
-            <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+            <motion.h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial={{opacity:0, y: 100}}
             animate={{opacity: 1, y: 0}}>
                 <span className="font-bold">Hello, I'm Karim Kanafani <br></br></span> I'm a{" "}
                 <span className="font-bold">Software Engineering Student</span> at{" "}
                 <span className="font-bold">McGill University</span>. <br></br> I enjoy
                 exploring different facets of development ranging from  <span className="font-bold">apps to games</span>.
-            </motion.p>
+            </motion.h1>
 
             <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
             initial={{opacity: 0, y: 100}}

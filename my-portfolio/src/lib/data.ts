@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import corpcommentImg from "../../public/corpcomment.png";
+import rmtdevImg from "../../public/rmtdev.png";
+import wordanalyticsImg from "../../public/wordanalytics.png";
 
 export const links = [
     {
@@ -62,25 +62,25 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Rush App",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        // imageUrl: corpcommentImg,
+            "A Web 3.0 ticketing app that aims to decentralize the ticketing industry. This is a startup I founded with four of my peers at McGill University.",
+        tags: ["React Native", "JavaScript", "MongoDB", "Solidity", "Expo", "Figma", "Mobile Development"],
+        imageUrl: rmtdevImg,
     },
     {
-        title: "rmtDev",
+        title: "Finance Tracker",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        // imageUrl: rmtdevImg,
+            "I worked as a full-stack developer on this mobile application for my Software Engineering in Practice class.",
+        tags: ["React Native", "PostgreSQL", "JavaScript", "Expo", "Mobile Development"],
+        imageUrl: corpcommentImg,
     },
     {
-        title: "Word Analytics",
+        title: "NFTLeaguez Web Game",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        // imageUrl: wordanalyticsImg,
+            "As a freelance developer for STADIO, I built a WebGL multiplayer simulation basketball game from the ground up that utilizes the Solana Blockchain.",
+        tags: ["Unity", "C#", "API", "WebGL", "Canva", "Figma", "Game Development"],
+        imageUrl: wordanalyticsImg,
     },
 ] as const;
 
