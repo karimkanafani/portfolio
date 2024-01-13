@@ -25,19 +25,16 @@ export default function Experience() {
             experiencesData.map((item, index) => (
                 <React.Fragment key={index}>
                   <TimelineItem>
-                    <TimelineOppositeContent>
-                      {item.date}
-                    </TimelineOppositeContent>
                     <TimelineSeparator>
                       <TimelineConnector/>
-                      <TimelineDot className="text-2xl font-semibold" variant="outlined">
+                      <TimelineDot className="text-xl font-semibold" variant="outlined">
                         {item.icon}
                       </TimelineDot>
                       <TimelineConnector/>
                     </TimelineSeparator>
                     <TimelineContent className="text-xl">
                       <h3 className="font-semibold capitalize">{item.title}</h3>
-                      <p className="font-normal !mt-0">{item.location}</p>
+                      <p className="font-normal !mt-0">{item.location} - {item.date}</p>
                       <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{item.description}</p>
                     </TimelineContent>
                   </TimelineItem>

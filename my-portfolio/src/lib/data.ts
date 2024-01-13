@@ -1,10 +1,12 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import {FaDatabase, FaGamepad, FaReact} from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import nftlImg from "../../public/NFTLeaguez.png"
 import moneyMattersImg from "../../public/MoneyMatters.png"
 import rmtdevImg from "../../public/rmtdev.png";
+import {FaMobile} from "react-icons/fa6";
+import {IoTicket} from "react-icons/io5";
 
 export const links = [
     {
@@ -35,28 +37,44 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "Data Analyst Intern",
+        location: "Beirut, Lebanon",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019",
+            "As a data analyst at the American University of Beirut Medical Center, I helped Doctors and Scientists compile and analyze data.",
+        icon: React.createElement(FaDatabase),
+        date: "2018",
     },
     {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
+        title: "Software Developer Intern",
+        location: "Dubai, UAE",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-        icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+            "At Hafla, I worked as a back-end developer within a team and built an API for their newsletter that performs CRUD operations.",
+        icon: React.createElement(FaDatabase),
+        date: "2022",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
+        title: "Mobile Developer Intern",
+        location: "Dubai, UAE",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2021 - present",
+            "At Chalhoub group, I was responsible of building tablet ports for their brand applications using React Native and TypeScript.",
+        icon: React.createElement(FaMobile),
+        date: "2023",
+    },
+    {
+        title: "Freelance Game Developer",
+        location: "Australia",
+        description:
+            "I developed a multiplayer simulation basketball game for WebGL using the Unity game engine. It utilizes the blockchain to access information for STADIO's player base.",
+        icon: React.createElement(FaGamepad),
+        date: "2023",
+    },
+    {
+        title: "Co-Founder",
+        location: "Montreal, QC, Canada",
+        description:
+            "I work as a full-stack developer at RUSH, a ticketing app that leverages the blockchain to distribute tickets.",
+        icon: React.createElement(IoTicket),
+        date: "2022 - Present",
     },
 ] as const;
 
