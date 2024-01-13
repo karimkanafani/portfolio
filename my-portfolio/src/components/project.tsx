@@ -44,7 +44,7 @@ export default function Project({title, description, tags, imageUrl}: ProjectPro
             group-even:group-hover:translate-y-3
             group-even:group-hover:rotate-2
             
-            ${mutableTags.includes("Mobile Development") ? 'w-[18.25rem] -right-9 group-even:-left-9' : ''}
+            ${mutableTags.includes("Mobile Development") ? 'w-[15.25rem] -right-9 group-even:-left-9' : ''}
 
             transition`}/>
             </section>
