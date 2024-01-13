@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "../../public/corpcomment.png";
+import nftlImg from "../../public/NFTLeaguez.png"
+import moneyMattersImg from "../../public/MoneyMatters.png"
 import rmtdevImg from "../../public/rmtdev.png";
-import wordanalyticsImg from "../../public/wordanalytics.png";
 
 export const links = [
     {
@@ -73,35 +73,39 @@ export const projectsData = [
         description:
             "I worked as a full-stack developer on this mobile application for my Software Engineering in Practice class.",
         tags: ["React Native", "PostgreSQL", "JavaScript", "Expo", "Mobile Development"],
-        imageUrl: corpcommentImg,
+        imageUrl: moneyMattersImg,
     },
     {
         title: "NFTLeaguez Web Game",
         description:
             "As a freelance developer for STADIO, I built a WebGL multiplayer simulation basketball game from the ground up that utilizes the Solana Blockchain.",
         tags: ["Unity", "C#", "API", "WebGL", "Canva", "Figma", "Game Development"],
-        imageUrl: wordanalyticsImg,
+        imageUrl: nftlImg,
     },
 ] as const;
 
 export const skillsData = [
+    "Java",
+    "C",
+    "C++",
+    "C#",
+    "Python",
+    "Umple",
     "HTML",
     "CSS",
     "JavaScript",
     "TypeScript",
     "React",
+    "React Native",
     "Next.js",
     "Node.js",
     "Git",
     "Tailwind",
-    "Prisma",
-    "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
-    "Express",
     "PostgreSQL",
-    "Python",
-    "Django",
-    "Framer Motion",
+    "Spring",
+    "Unity",
+    "Unreal Engine",
+    "Solidity",
+    "Bash",
+    "Assembly ARM",
 ] as const;
