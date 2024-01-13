@@ -32,7 +32,7 @@ export default function Experience() {
                       </TimelineDot>
                       <TimelineConnector/>
                     </TimelineSeparator>
-                    <TimelineContent className="text-xl">
+                    <TimelineContent className="text-xs sm:text-xl">
                       <h3 className="font-semibold capitalize">{item.title}</h3>
                       <p className="font-normal !mt-0">{item.location} - {item.date}</p>
                       <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{item.description}</p>

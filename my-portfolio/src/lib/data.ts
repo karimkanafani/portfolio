@@ -3,8 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import {FaDatabase, FaGamepad, FaReact} from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import nftlImg from "../../public/NFTLeaguez.png"
+import rushImg from "../../public/RushApp.png"
 import moneyMattersImg from "../../public/MoneyMatters.png"
-import rmtdevImg from "../../public/rmtdev.png";
 import {FaMobile} from "react-icons/fa6";
 import {IoTicket} from "react-icons/io5";
 
@@ -84,10 +84,10 @@ export const projectsData = [
         description:
             "A Web 3.0 ticketing app that aims to decentralize the ticketing industry. This is a startup I founded with four of my peers at McGill University.",
         tags: ["React Native", "JavaScript", "MongoDB", "Solidity", "Expo", "Figma", "Mobile Development"],
-        imageUrl: rmtdevImg,
+        imageUrl: rushImg,
     },
     {
-        title: "Finance Tracker",
+        title: "MoneyMatters Finance Tracker",
         description:
             "I worked as a full-stack developer on this mobile application for my Software Engineering in Practice class.",
         tags: ["React Native", "PostgreSQL", "JavaScript", "Expo", "Mobile Development"],
