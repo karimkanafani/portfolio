@@ -6,6 +6,13 @@ import {useSectionInView} from "@/lib/hooks";
 import SectionHeading from "@/components/section-heading";
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import {experiencesData} from "@/lib/data";
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -13,36 +20,32 @@ export default function Experience() {
   return (
       <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
         <SectionHeading>My experience</SectionHeading>
-        <VerticalTimeline lineColor=''>
+        <Timeline position="alternate">
           {
             experiencesData.map((item, index) => (
                 <React.Fragment key={index}>
-                  <VerticalTimelineElement
-                  contentStyle={{
-                    background: "#frf4f6",
-                    boxShadow: "none",
-                    border: "1px solid rgba(0,0,0,0.05)",
-                    textAlign: "left",
-                    padding: "1.3rem 2rem",
-                  }}
-                  contentArrowStyle={{
-                    borderRight: "0.4rem solid #9ca3af",
-                  }}
-                  date={item.date}
-                  icon={item.icon}
-                  iconStyle={{
-                    background: "white",
-                    fontSize: "1.5rem"
-                  }}>
-                    <h3 className="font-semibold capitalize">{item.title}</h3>
-                    <p className="font-normal !mt-0">{item.location}</p>
-                    <p className="!mt-1 !font-normal text-gray-700">{item.description}</p>
-                  </VerticalTimelineElement>
+                  <TimelineItem>
+                    <TimelineOppositeContent>
+                      {item.date}
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                      <TimelineConnector/>
+                      <TimelineDot className="text-2xl font-semibold" variant="outlined">
+                        {item.icon}
+                      </TimelineDot>
+                      <TimelineConnector/>
+                    </TimelineSeparator>
+                    <TimelineContent className="text-xl">
+                      <h3 className="font-semibold capitalize">{item.title}</h3>
+                      <p className="font-normal !mt-0">{item.location}</p>
+                      <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{item.description}</p>
+                    </TimelineContent>
+                  </TimelineItem>
                 </React.Fragment>
 
             ))
           }
-        </VerticalTimeline>
+        </Timeline>
       </section>
   )
 }
